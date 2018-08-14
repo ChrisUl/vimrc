@@ -1,11 +1,33 @@
-" Show line numbers
-set number
+""" CHRIS' VIM CONFIG FILE """
 
-" Show syntax highlighting
-syntax on
+""" Pathogen plugin  
+execute pathogen#infect()
+autocmd vimenter * NERDTree
 
-" Color scheme "dracula"
-color dracula
+""" syntax highlighting and colors
+colorscheme darcula  
 
-" Highlight current line
+""" tabs and spaces
+set backspace=2 
+set tabstop=4
+set softtabstop=4
+
+""" line numbers and visual output
+set number 
+set showcmd
 set cursorline
+
+""" searching
+set incsearch
+set ignorecase smartcase
+
+""" font
+set guifont=Consolas:h12
+
+""""""""""""""""""""
+""" function mapping
+""""""""""""""""""""
+
+""" bubbling
+nmap <C-Up> ddkP
+nmap <C-Down> ddp
